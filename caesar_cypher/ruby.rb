@@ -1,14 +1,19 @@
+require 'pry'
 
 def cypher(string, number)
   split_string = string.split('')
-
-
-=begin
-take a string
-split it into letters
-convert letters to number
-add input number
-convert each number into letters
-join it
-spit out as string
-=end
+  i = 0
+  while i < number
+    i+=1
+  split_string.map! {|letter| 
+    if letter == 'z'
+      letter = 'a'
+    elsif letter =='Z'
+      letter = 'A'
+    elsif letter == ' '
+      letter = ' '
+    else letter.next
+    end}
+  end
+  puts split_string.join("")
+end
