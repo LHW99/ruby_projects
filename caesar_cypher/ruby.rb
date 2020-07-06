@@ -1,4 +1,3 @@
-require 'pry'
 
 def cypher(string, number)
   split_string = string.split('')
