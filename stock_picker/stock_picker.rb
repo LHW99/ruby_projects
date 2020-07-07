@@ -5,7 +5,7 @@ def stock_picker(days)
   j=1
   best_trade=[0,0]
   while i < (days.length - 1)
-    until (days.length - j) = 0
+    while (days.length - j) != 0
       if days[j] - days[i] > best_trade[1] - best_trade[0]
         best_trade = [days[i],days[j]]
       end
