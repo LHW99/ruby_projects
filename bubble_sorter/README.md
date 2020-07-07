@@ -1,0 +1,1 @@
+Using ruby to create a bubble sorter. It will sequentially move through sets of adjacent numbers in an array and shift the higher number over until the numbers are in order from lowest to highest.
