@@ -1,4 +1,4 @@
-base_array = [0, 3, 2, 1, 4, 5, 6, 7]
+base_array = [3, 13, 5, 1, 100, 34, 22, 17]
 
 def merge_sort(array)
   n = array.length
@@ -16,6 +16,7 @@ def merge_sort(array)
   farray1 = two_array(carray1,carray2)
   farray2 = two_array(carray3,carray4)
   final_array = two_array(farray1,farray2)
+  puts final_array
 end
 
 def two_sort(double)
@@ -51,9 +52,10 @@ def two_array(arra1, arra2)
       end
     end
   end
+  return final
 end
 
-puts two_array([0,6], [5,9])
+puts merge_sort(base_array)
 
 # split array into half
 # keep splitting halves until unsplittable
